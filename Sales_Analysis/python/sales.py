@@ -26,5 +26,10 @@ print("Sales:", top_category_sales)
 loss = data[data["Profit"] < 0]
 loss.to_csv("loss_products.csv", index=False)
 
+
+
 print(loss[["Product Name", "Profit"]].head())
 print(loss[["Product Category", "Profit"]].head())
+
+print("Total Loss making items = ", len(loss))
+
